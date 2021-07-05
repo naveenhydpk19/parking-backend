@@ -16,7 +16,13 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<maven.compiler.release>11</maven.compiler.release>
+		<java.version>1.11</java.version>
+		<sonar.coverage.exclusions>**parking/*,**/config/*,**/entity/*,**/dto/*,**/repository/*,**/exception/*,**/util/*</sonar.coverage.exclusions>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<sonar.host.url>http://172.17.143.181:9000</sonar.host.url>
+		<sonar.login.admin>admin</sonar.login.admin>
+		<sonar.password>admin</sonar.password>
 	</properties>
 
 	<dependencies>
